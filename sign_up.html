@@ -26,11 +26,16 @@
     </div>
     <nummer>
         <label for="phone">Enter your phone number:</label>
-        <input type="tel" id="phone" name="phone"
-               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-               required>
-        <small>Format: 06-1847-7576</small>
+        <input type="number" id="tentacles" name="tentacles"
+               min="10" max="100">
     </nummer>
+
+    <div>
+        <label for="pass">Password (8 characters minimum):</label>
+        <input type="password" id="pass" name="password"
+               minlength="8" required>
+    </div>
+
 
     <note>
         <p> <span style="border:1px solid black">If you filled in everything correctly you will only need a 4 digit code.
